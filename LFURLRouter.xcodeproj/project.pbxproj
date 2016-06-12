@@ -469,7 +469,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/LFURLRouterDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.formax.LFURLRouter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.guangbool.LFURLRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -480,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/LFURLRouterDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.formax.LFURLRouter;
+				PRODUCT_BUNDLE_IDENTIFIER = org.guangbool.LFURLRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
