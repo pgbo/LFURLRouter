@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9890782B1D0D0B40009D7AB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078211D0D0B40009D7AB0 /* AppDelegate.m */; };
+		9890782C1D0D0B40009D7AB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989078221D0D0B40009D7AB0 /* Assets.xcassets */; };
+		9890782D1D0D0B40009D7AB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989078231D0D0B40009D7AB0 /* LaunchScreen.storyboard */; };
+		9890782E1D0D0B40009D7AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989078251D0D0B40009D7AB0 /* Main.storyboard */; };
+		9890782F1D0D0B40009D7AB0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 989078271D0D0B40009D7AB0 /* Info.plist */; };
+		989078301D0D0B40009D7AB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078281D0D0B40009D7AB0 /* main.m */; };
+		989078311D0D0B40009D7AB0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9890782A1D0D0B40009D7AB0 /* ViewController.m */; };
+		9890784A1D0D0B55009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078361D0D0B55009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.m */; };
+		9890784B1D0D0B55009D7AB0 /* LFURLRouteCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078381D0D0B55009D7AB0 /* LFURLRouteCore.m */; };
+		9890784C1D0D0B55009D7AB0 /* LFURLRouteConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9890783C1D0D0B55009D7AB0 /* LFURLRouteConfiguration.m */; };
+		9890784D1D0D0B55009D7AB0 /* LFURLRouteNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9890783E1D0D0B55009D7AB0 /* LFURLRouteNode.m */; };
+		9890784E1D0D0B55009D7AB0 /* LFURLRouteConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078411D0D0B55009D7AB0 /* LFURLRouteConfigurationManager.m */; };
+		9890784F1D0D0B55009D7AB0 /* LFURLRouteNodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078431D0D0B55009D7AB0 /* LFURLRouteNodeManager.m */; };
+		989078501D0D0B55009D7AB0 /* NSURL+LFURLRouteParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078471D0D0B55009D7AB0 /* NSURL+LFURLRouteParser.m */; };
+		989078511D0D0B55009D7AB0 /* LFURLRouteApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 989078491D0D0B55009D7AB0 /* LFURLRouteApplication.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9854D8821D017505008A6057 /* LFURLRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFURLRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9854D8A61D018A49008A6057 /* LFURLRouteApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteApplication.h; sourceTree = "<group>"; };
+		9854D8A71D018A49008A6057 /* LFURLRouteApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteApplication.m; sourceTree = "<group>"; };
+		989078051D0D041B009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFURLRouteCore+LFURLRoutePrivate.h"; sourceTree = "<group>"; };
+		989078061D0D041B009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFURLRouteCore+LFURLRoutePrivate.m"; sourceTree = "<group>"; };
+		989078071D0D041B009D7AB0 /* LFURLRouteCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteCore.h; sourceTree = "<group>"; };
+		989078081D0D041B009D7AB0 /* LFURLRouteCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteCore.m; sourceTree = "<group>"; };
+		9890780B1D0D041B009D7AB0 /* LFURLRouteConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteConfiguration.h; sourceTree = "<group>"; };
+		9890780C1D0D041B009D7AB0 /* LFURLRouteConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteConfiguration.m; sourceTree = "<group>"; };
+		9890780D1D0D041B009D7AB0 /* LFURLRouteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteNode.h; sourceTree = "<group>"; };
+		9890780E1D0D041B009D7AB0 /* LFURLRouteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteNode.m; sourceTree = "<group>"; };
+		989078101D0D041B009D7AB0 /* LFURLRouteConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteConfigurationManager.h; sourceTree = "<group>"; };
+		989078111D0D041B009D7AB0 /* LFURLRouteConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteConfigurationManager.m; sourceTree = "<group>"; };
+		989078121D0D041B009D7AB0 /* LFURLRouteNodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteNodeManager.h; sourceTree = "<group>"; };
+		989078131D0D041B009D7AB0 /* LFURLRouteNodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteNodeManager.m; sourceTree = "<group>"; };
+		989078161D0D041B009D7AB0 /* NSURL+LFURLRouteParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LFURLRouteParser.h"; sourceTree = "<group>"; };
+		989078171D0D041B009D7AB0 /* NSURL+LFURLRouteParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LFURLRouteParser.m"; sourceTree = "<group>"; };
+		989078201D0D0B40009D7AB0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		989078211D0D0B40009D7AB0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		989078221D0D0B40009D7AB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		989078241D0D0B40009D7AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		989078261D0D0B40009D7AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		989078271D0D0B40009D7AB0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989078281D0D0B40009D7AB0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		989078291D0D0B40009D7AB0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9890782A1D0D0B40009D7AB0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		989078351D0D0B55009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFURLRouteCore+LFURLRoutePrivate.h"; sourceTree = "<group>"; };
+		989078361D0D0B55009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LFURLRouteCore+LFURLRoutePrivate.m"; sourceTree = "<group>"; };
+		989078371D0D0B55009D7AB0 /* LFURLRouteCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteCore.h; sourceTree = "<group>"; };
+		989078381D0D0B55009D7AB0 /* LFURLRouteCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteCore.m; sourceTree = "<group>"; };
+		9890783B1D0D0B55009D7AB0 /* LFURLRouteConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteConfiguration.h; sourceTree = "<group>"; };
+		9890783C1D0D0B55009D7AB0 /* LFURLRouteConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteConfiguration.m; sourceTree = "<group>"; };
+		9890783D1D0D0B55009D7AB0 /* LFURLRouteNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteNode.h; sourceTree = "<group>"; };
+		9890783E1D0D0B55009D7AB0 /* LFURLRouteNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteNode.m; sourceTree = "<group>"; };
+		989078401D0D0B55009D7AB0 /* LFURLRouteConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteConfigurationManager.h; sourceTree = "<group>"; };
+		989078411D0D0B55009D7AB0 /* LFURLRouteConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteConfigurationManager.m; sourceTree = "<group>"; };
+		989078421D0D0B55009D7AB0 /* LFURLRouteNodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteNodeManager.h; sourceTree = "<group>"; };
+		989078431D0D0B55009D7AB0 /* LFURLRouteNodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteNodeManager.m; sourceTree = "<group>"; };
+		989078461D0D0B55009D7AB0 /* NSURL+LFURLRouteParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+LFURLRouteParser.h"; sourceTree = "<group>"; };
+		989078471D0D0B55009D7AB0 /* NSURL+LFURLRouteParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+LFURLRouteParser.m"; sourceTree = "<group>"; };
+		989078481D0D0B55009D7AB0 /* LFURLRouteApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFURLRouteApplication.h; sourceTree = "<group>"; };
+		989078491D0D0B55009D7AB0 /* LFURLRouteApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFURLRouteApplication.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9854D87F1D017505008A6057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9854D8791D017505008A6057 = {
+			isa = PBXGroup;
+			children = (
+				989078321D0D0B55009D7AB0 /* LFURLRouter */,
+				9890781F1D0D0B40009D7AB0 /* LFURLRouterDemo */,
+				9854D89C1D01754D008A6057 /* Classes */,
+				9854D8831D017505008A6057 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9854D8831D017505008A6057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9854D8821D017505008A6057 /* LFURLRouter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9854D89C1D01754D008A6057 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				989078031D0D041B009D7AB0 /* Application */,
+				9854D8A61D018A49008A6057 /* LFURLRouteApplication.h */,
+				9854D8A71D018A49008A6057 /* LFURLRouteApplication.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		989078031D0D041B009D7AB0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				989078041D0D041B009D7AB0 /* Application Interface */,
+				989078091D0D041B009D7AB0 /* Applilcation Logic */,
+				989078141D0D041B009D7AB0 /* Common */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		989078041D0D041B009D7AB0 /* Application Interface */ = {
+			isa = PBXGroup;
+			children = (
+				989078051D0D041B009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.h */,
+				989078061D0D041B009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.m */,
+				989078071D0D041B009D7AB0 /* LFURLRouteCore.h */,
+				989078081D0D041B009D7AB0 /* LFURLRouteCore.m */,
+			);
+			path = "Application Interface";
+			sourceTree = "<group>";
+		};
+		989078091D0D041B009D7AB0 /* Applilcation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9890780A1D0D041B009D7AB0 /* Entity */,
+				9890780F1D0D041B009D7AB0 /* Manager */,
+			);
+			path = "Applilcation Logic";
+			sourceTree = "<group>";
+		};
+		9890780A1D0D041B009D7AB0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9890780B1D0D041B009D7AB0 /* LFURLRouteConfiguration.h */,
+				9890780C1D0D041B009D7AB0 /* LFURLRouteConfiguration.m */,
+				9890780D1D0D041B009D7AB0 /* LFURLRouteNode.h */,
+				9890780E1D0D041B009D7AB0 /* LFURLRouteNode.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9890780F1D0D041B009D7AB0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				989078101D0D041B009D7AB0 /* LFURLRouteConfigurationManager.h */,
+				989078111D0D041B009D7AB0 /* LFURLRouteConfigurationManager.m */,
+				989078121D0D041B009D7AB0 /* LFURLRouteNodeManager.h */,
+				989078131D0D041B009D7AB0 /* LFURLRouteNodeManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		989078141D0D041B009D7AB0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				989078151D0D041B009D7AB0 /* Categories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		989078151D0D041B009D7AB0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				989078161D0D041B009D7AB0 /* NSURL+LFURLRouteParser.h */,
+				989078171D0D041B009D7AB0 /* NSURL+LFURLRouteParser.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		9890781F1D0D0B40009D7AB0 /* LFURLRouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				989078201D0D0B40009D7AB0 /* AppDelegate.h */,
+				989078211D0D0B40009D7AB0 /* AppDelegate.m */,
+				989078221D0D0B40009D7AB0 /* Assets.xcassets */,
+				989078231D0D0B40009D7AB0 /* LaunchScreen.storyboard */,
+				989078251D0D0B40009D7AB0 /* Main.storyboard */,
+				989078271D0D0B40009D7AB0 /* Info.plist */,
+				989078281D0D0B40009D7AB0 /* main.m */,
+				989078291D0D0B40009D7AB0 /* ViewController.h */,
+				9890782A1D0D0B40009D7AB0 /* ViewController.m */,
+			);
+			path = LFURLRouterDemo;
+			sourceTree = "<group>";
+		};
+		989078321D0D0B55009D7AB0 /* LFURLRouter */ = {
+			isa = PBXGroup;
+			children = (
+				989078331D0D0B55009D7AB0 /* Application */,
+				989078481D0D0B55009D7AB0 /* LFURLRouteApplication.h */,
+				989078491D0D0B55009D7AB0 /* LFURLRouteApplication.m */,
+			);
+			path = LFURLRouter;
+			sourceTree = "<group>";
+		};
+		989078331D0D0B55009D7AB0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				989078341D0D0B55009D7AB0 /* Application Interface */,
+				989078391D0D0B55009D7AB0 /* Applilcation Logic */,
+				989078441D0D0B55009D7AB0 /* Common */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		989078341D0D0B55009D7AB0 /* Application Interface */ = {
+			isa = PBXGroup;
+			children = (
+				989078351D0D0B55009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.h */,
+				989078361D0D0B55009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.m */,
+				989078371D0D0B55009D7AB0 /* LFURLRouteCore.h */,
+				989078381D0D0B55009D7AB0 /* LFURLRouteCore.m */,
+			);
+			path = "Application Interface";
+			sourceTree = "<group>";
+		};
+		989078391D0D0B55009D7AB0 /* Applilcation Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9890783A1D0D0B55009D7AB0 /* Entity */,
+				9890783F1D0D0B55009D7AB0 /* Manager */,
+			);
+			path = "Applilcation Logic";
+			sourceTree = "<group>";
+		};
+		9890783A1D0D0B55009D7AB0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				9890783B1D0D0B55009D7AB0 /* LFURLRouteConfiguration.h */,
+				9890783C1D0D0B55009D7AB0 /* LFURLRouteConfiguration.m */,
+				9890783D1D0D0B55009D7AB0 /* LFURLRouteNode.h */,
+				9890783E1D0D0B55009D7AB0 /* LFURLRouteNode.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		9890783F1D0D0B55009D7AB0 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				989078401D0D0B55009D7AB0 /* LFURLRouteConfigurationManager.h */,
+				989078411D0D0B55009D7AB0 /* LFURLRouteConfigurationManager.m */,
+				989078421D0D0B55009D7AB0 /* LFURLRouteNodeManager.h */,
+				989078431D0D0B55009D7AB0 /* LFURLRouteNodeManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		989078441D0D0B55009D7AB0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				989078451D0D0B55009D7AB0 /* Categories */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		989078451D0D0B55009D7AB0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				989078461D0D0B55009D7AB0 /* NSURL+LFURLRouteParser.h */,
+				989078471D0D0B55009D7AB0 /* NSURL+LFURLRouteParser.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9854D8811D017505008A6057 /* LFURLRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9854D8991D017505008A6057 /* Build configuration list for PBXNativeTarget "LFURLRouter" */;
+			buildPhases = (
+				9854D87E1D017505008A6057 /* Sources */,
+				9854D87F1D017505008A6057 /* Frameworks */,
+				9854D8801D017505008A6057 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFURLRouter;
+			productName = LFURLRouter;
+			productReference = 9854D8821D017505008A6057 /* LFURLRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9854D87A1D017505008A6057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Formax;
+				TargetAttributes = {
+					9854D8811D017505008A6057 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 9854D87D1D017505008A6057 /* Build configuration list for PBXProject "LFURLRouter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9854D8791D017505008A6057;
+			productRefGroup = 9854D8831D017505008A6057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9854D8811D017505008A6057 /* LFURLRouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9854D8801D017505008A6057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9890782F1D0D0B40009D7AB0 /* Info.plist in Resources */,
+				9890782E1D0D0B40009D7AB0 /* Main.storyboard in Resources */,
+				9890782C1D0D0B40009D7AB0 /* Assets.xcassets in Resources */,
+				9890782D1D0D0B40009D7AB0 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9854D87E1D017505008A6057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9890784C1D0D0B55009D7AB0 /* LFURLRouteConfiguration.m in Sources */,
+				989078301D0D0B40009D7AB0 /* main.m in Sources */,
+				9890784B1D0D0B55009D7AB0 /* LFURLRouteCore.m in Sources */,
+				9890784E1D0D0B55009D7AB0 /* LFURLRouteConfigurationManager.m in Sources */,
+				9890784D1D0D0B55009D7AB0 /* LFURLRouteNode.m in Sources */,
+				9890782B1D0D0B40009D7AB0 /* AppDelegate.m in Sources */,
+				9890784A1D0D0B55009D7AB0 /* LFURLRouteCore+LFURLRoutePrivate.m in Sources */,
+				989078311D0D0B40009D7AB0 /* ViewController.m in Sources */,
+				989078501D0D0B55009D7AB0 /* NSURL+LFURLRouteParser.m in Sources */,
+				989078511D0D0B55009D7AB0 /* LFURLRouteApplication.m in Sources */,
+				9890784F1D0D0B55009D7AB0 /* LFURLRouteNodeManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		989078231D0D0B40009D7AB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989078241D0D0B40009D7AB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		989078251D0D0B40009D7AB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989078261D0D0B40009D7AB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9854D8971D017505008A6057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9854D8981D017505008A6057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9854D89A1D017505008A6057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/LFURLRouterDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.formax.LFURLRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9854D89B1D017505008A6057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/LFURLRouterDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.formax.LFURLRouter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9854D87D1D017505008A6057 /* Build configuration list for PBXProject "LFURLRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9854D8971D017505008A6057 /* Debug */,
+				9854D8981D017505008A6057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9854D8991D017505008A6057 /* Build configuration list for PBXNativeTarget "LFURLRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9854D89A1D017505008A6057 /* Debug */,
+				9854D89B1D017505008A6057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9854D87A1D017505008A6057 /* Project object */;
+}
