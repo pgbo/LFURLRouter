@@ -27,7 +27,7 @@
         
     }]];
     
-    [routeApp routeURL:[NSURL URLWithString:@"formaxlife://xw12345/?x=1&y=2"] sourceObject:self];
+    [routeApp routeURLString:@"formaxlife://xw12345/?x=1&y=2" sourceObject:self];
     
     return YES;
 }

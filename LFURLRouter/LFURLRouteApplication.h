@@ -24,3 +24,11 @@
 - (id)routeURL:(NSURL *)URL sourceObject:(NSObject *)sourceObject;
 
 @end
+
+@interface LFURLRouteApplication (URLString)
+
+- (id)routeURLString:(NSString *)URLString;
+
+- (id)routeURLString:(NSString *)URLString sourceObject:(NSObject *)sourceObject;
+
+@end

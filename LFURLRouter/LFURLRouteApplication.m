@@ -89,4 +89,15 @@
     }
 }
 
+- (id)routeURLString:(NSString *)URLString
+{
+    return [self routeURLString:URLString sourceObject:nil];
+}
+
+- (id)routeURLString:(NSString *)URLString sourceObject:(NSObject *)sourceObject
+{
+    if (!URLString) return nil;
+    return [self routeURL:[NSURL URLWithString:URLString] sourceObject:sourceObject];
+}
+
 @end
