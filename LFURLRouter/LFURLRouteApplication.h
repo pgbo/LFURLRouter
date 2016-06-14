@@ -21,7 +21,12 @@
 
 - (id)routeURL:(NSURL *)URL;
 
-- (id)routeURL:(NSURL *)URL sourceObject:(NSObject *)sourceObject;
+- (id)routeURL:(NSURL *)URL
+   otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams;
+
+- (id)routeURL:(NSURL *)URL
+   otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams
+  sourceObject:(NSObject *)sourceObject;
 
 @end
 
@@ -29,6 +34,11 @@
 
 - (id)routeURLString:(NSString *)URLString;
 
-- (id)routeURLString:(NSString *)URLString sourceObject:(NSObject *)sourceObject;
+- (id)routeURLString:(NSString *)URLString
+         otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams;
+
+- (id)routeURLString:(NSString *)URLString
+         otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams
+        sourceObject:(NSObject *)sourceObject;
 
 @end

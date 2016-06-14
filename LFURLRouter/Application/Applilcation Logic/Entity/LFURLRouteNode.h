@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^LFURLRouteNodeExecutingBlock)(NSURL *sourceURL, NSDictionary *params, NSObject *sourceObject);
+typedef void(^LFURLRouteNodeExecutingBlock)(NSURL *sourceURL, NSDictionary<NSString *, NSObject *> *params, NSObject *sourceObject);
 
-typedef id(^LFURLRouteNodeReturnableBlock)(NSURL *sourceURL, NSDictionary *params, NSObject *sourceObject);
+typedef id(^LFURLRouteNodeReturnableBlock)(NSURL *sourceURL, NSDictionary<NSString *, NSObject *> *params, NSObject *sourceObject);
 
 @interface LFURLRouteNode : NSObject
 

@@ -51,37 +51,46 @@
 
 - (id)routeURL:(NSURL *)URL
 {
-    return [self routeURL:URL sourceObject:nil];
+    return [self routeURL:URL otherParams:nil sourceObject:nil];
 }
 
-- (id)routeURL:(NSURL *)URL sourceObject:(NSObject *)sourceObject
+- (id)routeURL:(NSURL *)URL
+   otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams
+{
+    return [self routeURL:URL otherParams:otherParams sourceObject:nil];
+}
+
+- (id)routeURL:(NSURL *)URL
+   otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams
+  sourceObject:(NSObject *)sourceObject
 {
     LFURLRouteNode *node = [self.core.nodeManager nodeForURL:URL];
     if (node == nil) {
         return nil;
     }
     else {
+        NSDictionary *urlKeyValues = nil;
         if (self.core.configurationManager.configure.URLRouteStyle == LFURLRouteStylePathInfo) {
-            if (node.executingBlock != nil) {
-                node.executingBlock(URL, [URL lfur_parseAsPathInfo], sourceObject);
-            }
-            if (node.returnableBlock != nil) {
-                return node.returnableBlock(URL, [URL lfur_parseAsPathInfo], sourceObject);
-            }
-            else {
-                return nil;
-            }
+            urlKeyValues = [URL lfur_parseAsPathInfo];
         }
         else if (self.core.configurationManager.configure.URLRouteStyle == LFURLRouteStyleQueryString) {
-            if (node.executingBlock != nil) {
-                node.executingBlock(URL, [URL lfur_parseAsQueryString], sourceObject);
-            }
-            if (node.returnableBlock != nil) {
-                return node.returnableBlock(URL, [URL lfur_parseAsQueryString], sourceObject);
-            }
-            else {
-                return nil;
-            }
+            urlKeyValues = [URL lfur_parseAsQueryString];
+        }
+        
+        NSMutableDictionary *completeParams = [NSMutableDictionary dictionary];
+        
+        if (urlKeyValues.count > 0) {
+            [completeParams addEntriesFromDictionary:urlKeyValues];
+        }
+        if (otherParams.count > 0) {
+            [completeParams addEntriesFromDictionary:otherParams];
+        }
+        
+        if (node.executingBlock != nil) {
+            node.executingBlock(URL, completeParams, sourceObject);
+        }
+        if (node.returnableBlock != nil) {
+            return node.returnableBlock(URL, completeParams, sourceObject);
         }
         else {
             return nil;
@@ -91,13 +100,20 @@
 
 - (id)routeURLString:(NSString *)URLString
 {
-    return [self routeURLString:URLString sourceObject:nil];
+    return [self routeURLString:URLString otherParams:nil sourceObject:nil];
 }
 
-- (id)routeURLString:(NSString *)URLString sourceObject:(NSObject *)sourceObject
+- (id)routeURLString:(NSString *)URLString
+         otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams
 {
-    if (!URLString) return nil;
-    return [self routeURL:[NSURL URLWithString:URLString] sourceObject:sourceObject];
+    return [self routeURLString:URLString otherParams:otherParams sourceObject:nil];
+}
+
+- (id)routeURLString:(NSString *)URLString
+         otherParams:(NSDictionary<NSString *, NSObject *> *)otherParams
+        sourceObject:(NSObject *)sourceObject
+{
+    return [self routeURL:[NSURL URLWithString:URLString] otherParams:otherParams sourceObject:sourceObject];
 }
 
 @end
