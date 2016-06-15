@@ -9,8 +9,23 @@
 #import "NSURL+LFURLRouteParser.h"
 
 NSString * NSStringByURLDecoding(NSString *string){
-//    return [string stringByRemovingPercentEncoding];
-    return [string stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    if ([string respondsToSelector:@selector(stringByRemovingPercentEncoding)]) {
+        return [string stringByRemovingPercentEncoding];
+    } else {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+        CFStringEncoding en = CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding);
+        NSString *decoded = [string stringByReplacingOccurrencesOfString:@"+"
+                                                              withString:@" "];
+        decoded = (__bridge_transfer NSString *)
+        CFURLCreateStringByReplacingPercentEscapesUsingEncoding(
+                                                                NULL,
+                                                                (__bridge CFStringRef)decoded,
+                                                                CFSTR(""),
+                                                                en);
+        return decoded;
+#pragma clang diagnostic pop
+    }
 }
 
 @implementation NSURL (LFURLRouteParser)

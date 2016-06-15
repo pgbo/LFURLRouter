@@ -27,7 +27,7 @@
         
     }]];
     
-    [routeApp routeURLString:@"formaxlife://xw12345/?x=1&y=2" sourceObject:self];
+    [routeApp routeURLString:@"formaxlife://xw12345/?x=1&y=2&name=%e5%a4%ba%e5%ae%9d" otherParams:nil sourceObject:self];
     
     return YES;
 }
