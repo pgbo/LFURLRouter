@@ -8,26 +8,6 @@
 
 #import "NSURL+LFURLRouteParser.h"
 
-NSString * NSStringByURLDecoding(NSString *string){
-    if ([string respondsToSelector:@selector(stringByRemovingPercentEncoding)]) {
-        return [string stringByRemovingPercentEncoding];
-    } else {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-        CFStringEncoding en = CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding);
-        NSString *decoded = [string stringByReplacingOccurrencesOfString:@"+"
-                                                              withString:@" "];
-        decoded = (__bridge_transfer NSString *)
-        CFURLCreateStringByReplacingPercentEscapesUsingEncoding(
-                                                                NULL,
-                                                                (__bridge CFStringRef)decoded,
-                                                                CFSTR(""),
-                                                                en);
-        return decoded;
-#pragma clang diagnostic pop
-    }
-}
-
 @implementation NSURL (LFURLRouteParser)
 
 - (NSDictionary *)lfur_parseAsPathInfo {
@@ -44,8 +24,8 @@ NSString * NSStringByURLDecoding(NSString *string){
                 valueString = obj;
             }
             if (keyString != nil && valueString != nil) {
-                [result setObject:NSStringByURLDecoding(valueString)
-                           forKey:NSStringByURLDecoding(keyString)];
+                [result setObject:valueString
+                           forKey:keyString];
                 keyString = valueString = nil;
             }
         }];
@@ -67,8 +47,8 @@ NSString * NSStringByURLDecoding(NSString *string){
                                                  range:NSMakeRange(0, [query length])];
         [matches enumerateObjectsUsingBlock:^(NSTextCheckingResult *obj, NSUInteger idx, BOOL *stop) {
             if ([obj numberOfRanges] >= 3) {
-                [result setObject:NSStringByURLDecoding([query substringWithRange:[obj rangeAtIndex:2]])
-                           forKey:NSStringByURLDecoding([query substringWithRange:[obj rangeAtIndex:1]])];
+                [result setObject:[query substringWithRange:[obj rangeAtIndex:2]]
+                           forKey:[query substringWithRange:[obj rangeAtIndex:1]]];
             }
         }];
         return result;
