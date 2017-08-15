@@ -27,8 +27,6 @@ typedef NS_ENUM(NSUInteger, LFURLRouteStyle) {
 
 /**
  *  默认配置，默认使用 LFURLRouteStyleQueryString
- *
- *  @return
  */
 + (LFURLRouteConfiguration *)defaultConfiguration;
 
